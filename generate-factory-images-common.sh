@@ -294,7 +294,6 @@ chmod a+x tmp/$PRODUCT-$VERSION/flash-base.sh
 
 # Create the distributable package
 (cd tmp ; tar zcvf ../$PRODUCT-$VERSION-factory.tgz $PRODUCT-$VERSION)
-mv $PRODUCT-$VERSION-factory.tgz $PRODUCT-$VERSION-factory-$(sha1sum < $PRODUCT-$VERSION-factory.tgz | cut -b -8).tgz
 
 # Clean up
 rm -rf tmp
